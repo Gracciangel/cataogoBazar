@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>catalogo</h1>
+    </header>
+    <div class="add">
+        <section class="namePrdocut">
+            <img src="./img/numero-1.png" alt="">
+            <span>nombre del producto</span>
+            <input id="name" type="text" placeholder="ingrese nombre del proucto">
+        </section>
+        
+        <section class="priceProduct">
+            <img src="./img/numero-2.png" alt="">
+            <span>precio del producto</span>
+            <input id="price" type="text" placeholder="ingrese precio del producto">
+        </section>
+        <section class="imageProduct">
+            <img src="./img/numero-3.png" alt="">
+            <span>cargue imagenes </span>
+            <input  type="file" name="" id="addImg">
+        </section>
+        <button id="btn">ENVIAR</button>
+    </div>
+
+    <!--scripts-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="./js/configuracion.js"></script>
+    <script src="./js/guardar.js"></script>
+</body>
+</html>
